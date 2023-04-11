@@ -10,6 +10,8 @@ import java.util.Arrays;
 class Solution {
     public int lengthOfLIS(int[] nums) {
         int len = nums.length;
+
+        //dp的定义是：以nums[i]结尾的最长子序列长度为dp[i]
         int[] dp = new int[len];
 
         Arrays.fill(dp, 1);
